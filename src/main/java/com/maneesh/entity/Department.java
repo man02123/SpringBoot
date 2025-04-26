@@ -15,6 +15,10 @@ public class Department {
     private String departmentAddress;
     private String departmentCode;
 
+    // Default constructor required by JPA
+    public Department() {
+    }
+
     public Department(long departmentId, String departmentName, String departmentAddress, String departmentCode) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
