@@ -8,6 +8,6 @@ public class controller {
 
     @GetMapping("/home")
     public String helloWorld() {
-        return "first request to response changed maneesh aa";
+        return "first request to response changed maneesh UPDATED";
     }
 }
