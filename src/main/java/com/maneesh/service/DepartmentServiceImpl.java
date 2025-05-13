@@ -28,9 +28,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public Department fetchDepartmentById(Long departmentId) throws DepartmentNotFoundException {
-
         Optional<Department> department = departmentRepository.findById(departmentId);
-
         if (!department.isPresent()) {
             throw new DepartmentNotFoundException("Department not found");
         }

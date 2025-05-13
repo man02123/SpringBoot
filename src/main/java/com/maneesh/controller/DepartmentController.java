@@ -21,8 +21,7 @@ public class DepartmentController {
     private DepartmentService departmentService;
 
     @PostMapping("/departments")
-    public Department savDepartment(@RequestBody Department department) { // @RequestBody is used to convert the json
-                                                                          // data to java object
+    public Department saveDepartment(@RequestBody Department department) {
         return departmentService.saveDepartment(department);
     }
 

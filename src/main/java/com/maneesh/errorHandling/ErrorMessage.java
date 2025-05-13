@@ -1,9 +1,13 @@
 package com.maneesh.errorHandling;
 
 import org.springframework.http.HttpStatus;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ErrorMessage {
+    @JsonProperty("status")
     private HttpStatus status;
+
+    @JsonProperty("message")
     private String message;
 
     public ErrorMessage() {
